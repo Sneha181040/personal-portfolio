@@ -8,8 +8,10 @@
     <script src="https://kit.fontawesome.com/b483581fa5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- ---------------- HEADER ---------------- -->
 <div id="header">
-   <div class="container">
+    <div class="container">
         <nav>
             <p class="logo">Portfolio.</p>
             <ul id="sidemenu">
@@ -17,44 +19,50 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class ="fas fa-times" onclick="closemenu()"></i>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
             <h1>Hello, I'm <span>Sneha Ghatol</span></h1>
             <br>
             <p>A Software Developer</p>
-           
         </div>
-   </div>
+    </div>
 </div>
+
+<!-- ---------------- ABOUT ---------------- -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <img src="my1.jpg" alt="Sneha Ghatol">
             </div>
+
             <div class="about-col-2">
                 <h1 class="sub">About Me</h1>
                 <p>Recent graduate with strong skills in Python and MySQL. Seeking an entry-level position as a Software Developer
                     or Data Analyst/Scientist to leverage my programming and analytical abilities. Eager to contribute to data-driven
                     decision-making and problem-solving by applying advanced statistical techniques.</p>
+
                 <div class="tab">
                     <p class="tab1 active-link" onclick="opentab(event, 'Skills')">Skills</p>
                     <p class="tab1" onclick="opentab(event, 'Experience')">Experience</p>
                     <p class="tab1" onclick="opentab(event, 'Education')">Education</p>
                 </div>
+
                 <div class="tab-contents active-tab" id="Skills">
                     <ul>
                         <li><span>Flask, ReactJS</span><br>Frameworks</li>
                         <li><span>HTML, CSS & JavaScript</span><br>Frontend development</li>
-                        <li><span>Python , JavaScript  </span><br>Backend development</li>
+                        <li><span>Python , JavaScript</span><br>Backend development</li>
                         <li><span>SQL</span><br>Database</li>
                         <li><span>Excel, Advanced Excel</span><br>Data Entry</li>
                         <li><span>Power BI & Tableau</span><br>Visualization</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="Experience">
                     <ul>
                         <li><span>Full Stack Developer</span><br>Technokraft Solutions (Sept 2025 - Nov 2025)</li>
@@ -62,11 +70,12 @@
                         <li><span>Python Development (Intern)</span><br>Coding Raja Technologies (Dec 2023 - Jan 2024)</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>2021-2025 Bachelor of Engineering</span><br> Pune Vidhyarthi Grihs College Of Engineering ,
+                        <li><span>2021-2025 Bachelor of Engineering</span><br>Pune Vidhyarthi Grihs College Of Engineering ,
                             Specialization In Artificial Intelligence and Data Science - 80%</li>
-                        <li><span>2021 HSC </span><br>K.V. Naik College of Arts, Commerce, Science - 86%</li>
+                        <li><span>2021 HSC</span><br>K.V. Naik College of Arts, Commerce, Science - 86%</li>
                         <li><span>2019 SSC</span><br>New Maratha High School - 85%</li>
                     </ul>
                 </div>
@@ -74,67 +83,77 @@
         </div>
     </div>
 </div>
+
+<!-- ---------------- PROJECTS ---------------- -->
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
+
         <div class="work-list">
+
             <div class="work">
                 <img src="PP.png">
                 <div class="layer">
                     <h3>Personal Portfolio</h3>
-                    <p>This is my Personal Portfolio Website. it features my Personal Information, Projects and Other Stuff. I used technologies such as HTML, CSS, JavaScript</p>
-                    <a href="https://github.com/Sneha181040/HTML-CSS-Javascript-Project/tree/main/Personal%20Portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>                </div> 
+                    <p>This is my Personal Portfolio Website. It features my personal information, projects, and other details using HTML, CSS, JavaScript.</p>
+                    <a href="https://github.com/Sneha181040/HTML-CSS-Javascript-Project/tree/main/Personal%20Portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
+
             <div class="work">
                 <img src="co.jpg">
                 <div class="layer">
-                <h3>Car-Object Detection</h3>
-                <p>Developed a Dynamic system that detect the car and object using data visualization
-                    frameworks TensorFlow,Keras and Python.Convolutional neural network (CNN) technique is used</p>
+                    <h3>Car-Object Detection</h3>
+                    <p>Developed a dynamic system that detects cars and objects using TensorFlow, Keras, Python, and CNN.</p>
                     <a href="https://github.com/Sneha181040/Car-Detection"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div> 
+                </div>
             </div>
+
             <div class="work">
                 <img src="hr.jpg">
                 <div class="layer">
-                <h3>Hospital Management</h3>
-                <p>A Hospital Management System using Python and SQL for streamlined patient,
-                    nurse, and doctor information management. Developed an intuitive and user-friendly interface for easy navigation
-                    and efficient data entry.</p>
-                    <a href="https://github.com/Sneha181040/Coding-Raja-Technologics/blob/main/Personal%20Budget%20Tracker.py"><i class="fa-solid fa-up-right-from-square"></i></a>                </div>
+                    <h3>Hospital Management</h3>
+                    <p>A Hospital Management System using Python and SQL for streamlined patient, nurse, and doctor management.</p>
+                    <a href="https://github.com/Sneha181040/Coding-Raja-Technologics/blob/main/Personal%20Budget%20Tracker.py"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
+
+            <!-- -------- FIXED LAST PROJECT -------- -->
             <div class="work">
-                <img src="AI.jpg">  
+                <img src="AI.jpg">
                 <div class="layer">
                     <h3>AI Ready Datasets and Model Platform</h3>
-                    <p>Developed a platform to enable ML and Data Science users to generate custom, 
-                    pre-processed, and synthetic datasets. Leveraged GANs for synthetic data generation 
-                    and unsupervised learning algorithms for data analysis. Provided real-time model 
-                    recommendations based on multiple dataset formats such as CSV, JSON, and JPG.</p>
-                <a href="YOUR_PROJECT_LINK_HERE">
+                    <p>Developed a platform to generate custom, pre-processed, and synthetic datasets using GANs and unsupervised learning. Provided real-time model recommendations for CSV, JSON, and JPG datasets.</p>
+                    <a href="YOUR_PROJECT_LINK_HERE">
                         <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
-        
+                </div>
             </div>
+
         </div>
 
+        <a href="#" class="btn">See More</a>
     </div>
-    <a href="#" class="btn">See More</a>
 </div>
 
+<!-- ---------------- CONTACT ---------------- -->
 <div id="contact">
     <div class="container">
         <div class="row">
+
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-envelope"></i> snehaghatol01@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> 8010569504</p>
+
                 <div class="social-icons">
                     <a href="https://linkedin.com/in/sneha-ghatol-2639a5270"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Sneha181040"><i class="fa-brands fa-github"></i></a>
                 </div>
+
                 <a href="Sneha Ghatol Resume (3).pdf" download class="btn btn2">Download Resume</a>
             </div>
+
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
@@ -144,10 +163,10 @@
                 </form>
                 <span id="msg"></span>
             </div>
+
         </div>
     </div>
 </div>
-
 
 <script src="personal.js"></script>
 </body>
